@@ -1,0 +1,11 @@
+<div class="container my-5 text-left">
+  <app-add-user (userAdded)="createUser($event)"></app-add-user>
+  <div class="my-3">
+    <hr />
+    <ul class="list-group">
+      <li class="list-group-item my-2" *ngFor="let user of users">
+        <app-user [user]="user"></app-user>
+      </li>
+    </ul>
+  </div>
+</div>

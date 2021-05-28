@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <div class="container">
+    <ul class="navbar navbar-nav">
+      <a class="navbar-brand">{{ title }}</a>
+    </ul>
+    <ul class="navbar-nav navbar-right">
+      <!-- <li class="nav-item">
+        <a href="" class="nav-link"> hello </a>
+      </li>
+      <li class="nav-item">
+        <a href="" class="nav-link"> hello </a>
+      </li> -->
+      <li class="nav-item">
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+          <button
+            class="btn btn-outline-light mr-2"
+            id="dropdownManual"
+            ngbDropdownAnchor
+            (focus)="myDrop.open()"
+          >
+            More
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownManual">
+            <button ngbDropdownItem>More - 1</button>
+            <button ngbDropdownItem>More - 2</button>
+            <button ngbDropdownItem>More - 3</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
